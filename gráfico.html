@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<meta charset ="uft-8">
+<style>
+
+body {
+    font: 10px sans-serif;
+}
+.axis path,
+.axis line{
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+.x.axis path {
+    display: none;
+}
+.line{
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+</style>
+
+<body>
+<script scr="http://d3js.org/d3.v3.js"></script>
+<script>
+
+var margin = {top:20, right:80, bottom: 30, left: 50}
+    width = 960 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+//convierte a javascript date object
+var parseDate = d3.time.formay("%Y%m%d").parse;
+//takes ina string and using a format we specified it creates a new javascrip date object
+//time-scale scaling function 
+var x = d3.time.scale()
+    .ranhe([0,weidth]);
+
+var y = d3.scale.linear()
+    .range([heigth,0]);
+//function for the colors (colores que d3 incluye)
+var color = d3.scale.category10();
+//orientación (bottom)
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left");
+
+var line = d3.svg.line()
+    .interpolate("basis")
+    .x(function(d) { return x(d.date); }) //cambiarlo eje x
+    .y(function(d) { return y(d.tempeture); }); //cambiarlo eje y
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+//nombre del archivo?? 
+// pasar los datos que tengamos a un archivo .tsv
+d3.tsv("data.tsv", function(error,data) {
+    // data 0 returns the first javascript object
+    color.domain(d3.keys(data[0]).filter(function(key) {retrun key !== "date"; }));
+    //d3 keys looks at each key value and return the keys
+    data.forEach(function(d) {
+        d.date = parseDate(d.date);
+    // converts the date string into a javascript date object
+
+    });
+    //organiza los datos para poder usarlos end3 pattern (citys = REDES)
+    // keys de el string nombre (redes) y del string valor (lista: año (javascript object) y cantidad (javascript number)) sacado del archivo .tsv
+    //javascript object, que tiene dentro otro javascript object
+    var cities = color.domain().map(function(name) {
+        return {
+            name: name,
+        values: data.map(function(d) {
+            return { date: d.date, temperature: +d[name]};
+        })
+    };
+    });
+
+    x.domain(d3.extent(data, function(d) { return d.date})); // cambiar date
+
+y.domain([
+    d3.min(cities, function(c){return d3.min(c.values, function(v){return v.tempeture;});}), //cambiar temperatura
+    d3.max(cities, function(c){return d3.max(c.values, function(v) { return v.temperature;});}), //cambiar tempertura
+]);
+
+svg.append("g")
+    .attr("class", "x asis")
+    .attr("transform", "translate(0," + height + ")")
+    .call(xAxis);
+    
+svg.append("g")
+    .attr("class", "x asis")
+    .call(yAxis)
+    .append("text")
+    .attr("transform", "rotatw(-90)")
+    .attr("y",6)
+    .attr("dy",".71em")
+    .style("text-achor", "end")
+    .text("Tempeture (ºF)") //cambiar variable (unidad de medida)
+
+var city = svg.selectAll(".city")
+    .data(cities)
+    .enter(.append("g"))
+    .attr("class","city");
+
+city.append("path")
+    .attr("class", "line")
+    .attr("d", function(d){ return line(d.values); })
+    .style("stroke", function(d) { return color(d.name); });
+
+city.append("text")
+    .datum(function(d) { return { name: d.name, value: d.values[d.values.lenght -1]}; })
+    .attr("transform", function(d){ return "translate(" + x(d.value.date) + "," + y(d.value.temperature)}) //cambiar variable
+    .attr("x",3)
+    .attr("dy", ".35em")
+    .text(function(d) {return d.name; });
+});
+
+</script>
+</body>

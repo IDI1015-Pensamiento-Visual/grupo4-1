@@ -1,0 +1,283 @@
+.titulos{
+    font-family: fuente1;
+    src:url(AndorRegular.otf);
+    font-size: 80px;
+}
+.titulos2{
+    font-family: fuente1;
+    src:url(AndorRegular.otf);
+    font-size: 60px;
+}
+#titulo2{
+    color:#7048C5;
+    padding-top: 0px;
+    background: rgba(255,218,118,0.8)
+}
+#titulo3{
+    color:#E7476E;
+    padding-top: 0px;
+    background: rgba(0,0,0,0.9)
+}
+.subtitulos{
+    font-family: fuente3;
+    src:url(Lato-Light.ttf);
+    font-size: 40px;
+}
+
+#botoninicial2{
+    position: relative;
+    left: 565px;
+    bottom: -390px;
+    width:  108px;
+    height: 111px;
+}
+#botoninicial3{
+        position: relative;
+        left: 565px;
+        bottom: -420px;
+        width:  108px;
+        height: 111px;
+}
+.boton1{
+    background: transparent url('aplicacion1.svg') no-repeat top left;
+    width:  72px;
+    height: 74px;
+    background-size: contain;
+    border: 1px solid transparent;
+}
+.boton2{
+    background: transparent url('aplicacion2.svg') no-repeat top left;
+    width:  72px;
+    height: 74px;
+    background-size: contain;
+    border: 1px solid transparent;
+}
+.boton3{
+    background: transparent url('aplicacion3.svg') no-repeat top left;
+    width:  72px;
+    height: 74px;
+    background-size: contain;
+    border: 1px solid transparent;
+}
+.boton4{
+    background: transparent url('confirmar.svg') no-repeat top left;
+    background-size: contain;
+    width:  150px;
+    height: 74px;
+    border: 1px solid transparent;
+}
+
+.boton5{
+    background: transparent url('inicio.svg') no-repeat top left;
+    background-size: contain;
+    width:  70px;
+    height: 36px;
+    border: 1px solid transparent;
+}
+#imagengrafico{
+    position: relative;
+    left: 100px;
+}
+
+.historias {
+    padding: 10px;
+    border: 1.5px solid;
+}
+
+#preguntainicial {
+    font-family: fuente2;
+    src:url(Lato-Black.ttf);
+    text-align: center;
+    position: relative;
+    bottom: -100px;
+    font-size: 45px;
+    font-weight: bold;
+    color:#F59EE2;
+}
+
+#sliderentero{
+    position: relative;
+    bottom: -120px;
+}
+#Qinicial{
+    background-color: rgba(0,0,0,0.9); 
+}
+#output {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 70px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+
+#output2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 70px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color:#FB5CC2;
+    position: relative;
+    bottom: -70px;
+}
+
+.slider {
+    width: 50%;
+    margin: 30px;
+  }
+
+
+.centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: -70px;
+}
+
+#subtitulo1{
+    font-family: fuente1;
+    font-size: 60px;
+}
+
+#texto {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:#FB5CC2;
+    font-weight: bold;
+    position: relative;
+    bottom: -70px;
+}
+#promedioredes {
+    position: relative;
+    bottom: -100px;
+    left: 200px;
+}
+
+#reloj{
+    position: relative;
+    bottom: -100px;
+    left: 50px;
+}
+
+#inicio {
+    background: transparent url('backgroundpaginaprincipal.svg') no-repeat top;
+    /*background-image: url("backgroundpaginaprincipal.svg");
+    background-size: cover;
+    background-position: center;*/
+    height: 260vh;
+    position: relative;
+    bottom: 100px;
+    opacity: 0.9;
+}
+#respuesta{
+    background: transparent url('Narrativa.png') no-repeat top;
+    /*background-image: url("backgroundpaginaprincipal.svg");
+    background-size: cover;
+    background-position: center;*/
+    height: 100vh;
+}
+.tprincipal{
+    font-family: fuente1;
+    src:url(AndorRegular.otf);
+    font-size: 90px;
+    text-align: right;
+    font-weight:bold;
+    
+}
+#T1{
+    position: relative;
+    bottom: -30px;
+    left: -10px;
+}
+#T2{
+    position: relative;
+    bottom: 80px;
+    left: -10px;
+}
+#T3{
+    position: relative;
+    bottom: 170px;
+    left: -10px;
+}
+#T4{
+    position: relative;
+    bottom: 260px;
+    left: -10px;
+}
+
+.slider-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 1px 1px 1px #000031;
+    border: 1px solid #131E1C;
+    height: 26px;
+    width: 26px;
+    border-radius: 15px;
+    background: #F59EE2;
+    cursor: pointer;
+  }
+
+#year1{
+   position: relative;
+   left: 255px;
+   bottom: 40px;
+   height: 5vh ;
+   width: 15vh;
+}
+#year2{
+    position: relative;
+    left: 270px;
+    bottom: 40px;
+    height: 5vh ;
+    width: 15vh;
+ }
+ #year3{
+    position: relative;
+    left: 330px;
+    bottom: 40px;
+    height: 5vh ;
+    width: 15vh;
+ }
+ #year4{
+    position: relative;
+    left: 300px;
+    bottom: 40px;
+    height: 5vh ;
+    width: 15vh;
+ }
+ #year5{
+    position: relative;
+    left: 270px;
+    bottom: 40px;
+    height: 5vh ;
+    width: 15vh;
+ }
+ #year6{
+    position: relative;
+    left: 560px;
+    bottom: 40px;
+    height: 5vh ;
+    width: 15vh;
+ }
+ .mensajes{
+    display: none;
+    position: relative;
+    left: 900px;
+    height: 10vh;
+    width: 60vh;
+    bottom: 450px;
+  }
+  #hazclick{
+    display: none;
+    height: 12vh;
+    width: 60vh;
+    position: relative;
+    left: 750px;
+    bottom: -300px;
+
+  }
