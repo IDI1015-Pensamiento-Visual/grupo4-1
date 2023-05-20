@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- sobre nuestro proyecto-->
+<!-- Pagina principal-->
 <html>
     <head>
         <meta charset="utf-8" />
@@ -7,6 +7,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script src="https://d3js.org/d3.v7.min.js"></script>
         <script type="text/html" src="archivo1.2.html"></script>
+        <script type="text/html" src="archivo1.3.html"></script>
         <script type="text/javascript" src="archivo2.js"></script>
         <link href="archivo3.css" rel="stylesheet" />
         <style>
@@ -14,19 +15,33 @@
                 font-family: fuente1;
                 src:url(AndorRegular.otf);
             }
+            @font-face{
+                font-family: fuente3;
+                src:url(Lato-Black.ttf);
+            }
         </style>
     </head>
+    <header>
+        <div>
+            <button class="boton1" title="inicio" ></button>
+            <button id="botoninicial3" class="boton3" ></button>
+            <button id="botoninicial2" class="boton2" ></button>
+        </div>
+    </header>
     <body>
-        <header class="titulos2" id="titulo2">Sobre Nuestro Proyecto
-            <nav class="historias">
-                <button  class="boton1" ></button>
-                <button class="boton3"></button>
-            </nav>
-        </header>
-        <footer>
-            <div id="footer2">
-                <button class="boton5"></button>
-            </div>
-        </footer> 
+    <section id="inicio">
+        <div>
+            <p id="T1" class="tprincipal"> El Impacto </p>
+            <p id="T2" class="tprincipal">Negativo de</p>
+            <p id="T3" class="tprincipal"> las Redes</p>
+            <p id="T4" class="tprincipal">Sociales</p>
+        </div>
+        <img id="hazclick" src="hazclick.svg">
+    </section>
+    <footer id="footer1">
+        <div>
+            <button class="boton5"></button>
+        </div>
+    </footer>
     </body>
 </html>

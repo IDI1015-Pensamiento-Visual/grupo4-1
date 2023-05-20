@@ -24,20 +24,6 @@
     font-size: 40px;
 }
 
-#botoninicial2{
-    position: relative;
-    left: 565px;
-    bottom: -390px;
-    width:  108px;
-    height: 111px;
-}
-#botoninicial3{
-        position: relative;
-        left: 565px;
-        bottom: -420px;
-        width:  108px;
-        height: 111px;
-}
 .boton1{
     background: transparent url('aplicacion1.svg') no-repeat top left;
     width:  72px;
@@ -281,3 +267,7 @@
     bottom: -300px;
 
   }
+.respuestainicial{
+    color:#FB5CC2;
+    font-size: 30px;
+}
