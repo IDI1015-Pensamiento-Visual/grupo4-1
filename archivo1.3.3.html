@@ -25,18 +25,208 @@
         </style>
     </head>
     <header class="titulos2" id="titulo3">Impacto negativo de las redes sociales
-        <nav class="historias">
-            <button class="boton1" title="inicio" ></button>
-            <button class="boton3" ></button>
-            <button class="boton2" ></button>
-        </nav>
+
     </header>
     <body>
+        <section class="headerinicio"></section>
+            <div class="aplicaciones">
+                <button class="boton1" title="Inicio" ></button>
+                <button  class="boton3" title="Impacto negativo de las redes sociales" ></button>
+                <button  class="boton2" title="¿Por qué las redes sociales afectan la salud mental?"></button>
+        </div>
+        </section>
         <div>
-            <button class="boton6">Usuarios de redes sociales vs tiempo</button>
-            <button class="boton7">Personas con problemas de salud mental vs tiempo</button>
-            <button class="boton8">Usuarios de redes sociales vs tiempo y personas con problemas de salud mental vs tiempo</button>
-        </div> 
+            <button class="boton6" title="Cantidad de usuarios de las redes sociales en el mundo"></button>
+            <button class="boton7" title="Cantidad de personas en el mundo con problemas de salud mental"></button>
+            <button class="boton8" title="Cantidad de usuarios de las redes sociales y personas con problemas de salud mental en el mundo"></button>
+        </div>
+        <section id="graficos">
+            <div class="subtitulos"> 
+                Cantidad de usuarios de las redes sociales y personas con problemas de salud mental en el mundo </div>
+        <div id='graph1'><!-- Grafico de lineas 1--></div>
+        <script>
+            var trace1 = {
+            x: [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
+            y: [0, 15000000,50000000, 110000000, 200000000, 370000000, 500000000, 700000000,1000000000,1210000000],
+            mode: 'lines',
+            name: "Instagram",
+            line:{
+                color: "#FFAEAE",
+                dash: 'dot',
+                width: 3
+            },
+            };
+
+            var trace2 = {
+                x: [2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
+                y: [0,6000000,12000000,58000000,100000000,242000000,482000000,739000000,955000000,1155000000,1310000000,1490000000,1710000000,2000000000,2230000000,2410000000],
+                mode: 'lines',
+                name: "Facebook",
+                line:{
+                    color:"#FFB26A",
+                    dash: 'dot',
+                    width: 3
+                },
+            }
+            
+            var trace3 = {
+                x: [ 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
+                y: [40000000,85000000,151000000,218000000,271000000,304000000,313000000,310000000,298000000,312000000],
+                mode: 'lines',
+                name: "Twitter",
+                line:{
+                    color:"#F85656 ",
+                    dash: 'dot',
+                    width: 3
+                },
+                };
+
+            var trace4 = {
+                x: [ 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
+                y: [0,10000000,50000000,103000000,213000000,409000000,719000000,1076000000,1323000000,1560000000,1813000000],
+                name: "WhatsApp",
+                mode: 'lines',
+                line:{
+                    color:"#FE7759",
+                    dash: 'dot',
+                    width: 3
+                },
+                hovertemplate: '<b>WhatsApp</b><br>Users: %{y}<extra>Se fundó el 2009</extra>'
+                };
+
+            var trace5 = {
+                x: [ 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
+                y: [0,1000000,17530000,57000000,86000000,143000000,173000000,188000000,203000000],
+                name: "Snapchat",
+                mode: 'lines',
+                line: {
+                    color: "#FFA9C3",
+                    dash: 'dot',
+                    width: 3
+                },
+
+                };
+
+            var trace6 = {
+                x: [ 2016, 2017, 2018, 2019],
+                y: [0,80000000,271000000,508000000],
+                mode: 'lines',
+                name: "TikTok",
+                line:{
+                    color: "#F5A7E9",
+                    dash: 'dot',
+                    width: 3
+                },
+                };
+            
+            var trace7 = {
+                x: [ 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
+                y: [200000000,500000000,700000000,1000000000,1100000000,1300000000,1500000000,1600000000,1800000000,2000000000],
+                mode: 'lines',
+                name: "Youtube",
+                line:{
+                    color: "#FE9359",
+                    dash: 'dot',
+                    width: 3
+                    },
+                    };
+
+                    var trace8 = {
+                        x: [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
+                        y: [245385000, 247954000, 250507000, 252405000, 254664000, 257152000, 260952000, 265162000, 269676000, 274620000, 278202000, 280679000, 282820000, 284925000, 286994000, 290513000, 294392000, 299440000, 302592000, 305744000],
+                        type: 'scatter',
+                        name: "Ansiedad",
+                        line: {
+                            color: "#4862C9" }
+                        };
+                    
+                        var trace9 = {
+                        x: [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
+                        y: [9840000, 9968000, 10096000, 10224000, 10368000, 10496000, 10624000, 10768000, 11577000, 11730000, 11883000, 12019000, 12172000, 12325000, 12478000, 13374000, 13518000, 13680000, 13824000, 13968000],
+                        type: 'scatter',
+                        name: "Desordenes Alimenticios",
+                        line:{
+                            color: "#7B67F8"
+                        }
+                        };
+            
+                        var trace10 = {
+                        x: [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
+                        y: [227550000, 230510000, 234101000, 237708000, 241056000, 244688000, 246344000, 246318000, 245841000, 246330000, 248145000, 250985000, 254896000, 258100000, 262038000, 265251000, 268858000, 272080000, 275712000, 278584000],
+                        type: 'scatter',
+                        name: "Depresión",
+                        line:{
+                            color: "#988FFF"
+                        }
+                        };
+                    
+                        var trace11 = {
+                        x: [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
+                        y: [1583704, 1540750, 1527824, 1540276, 1558860, 1525530, 1507930, 1510914, 1510914, 1501474, 1496846, 1482092, 1454166, 1432802, 1409200, 1390212, 1384412, 1387936, 1406730, 1406446],
+                        type: 'scatter',
+                        name: "Suicidios",
+                        line:{
+                            color:"#B784F6"
+                        }
+                        };
+            
+                        var trace12 = {
+                        x: [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
+                        y: [255, 258, 261, 263, 262, 262, 263, 270, 276, 280, 287, 290, 293, 293, 299, 302, 306, 309, 313, 318],
+                        type: 'scatter',
+                        name: "Muertes Desordenes Alimenticios",
+                        line:{
+                            color: "#D37FF0"
+                        }
+                        };
+                var selectorOptions = {
+                    buttons: [{
+
+                        step: 'month',
+                        stepmode: 'backward',
+                        count: 1,
+                        label: '1m'
+                    }, {
+                        step: 'month',
+                        stepmode: 'backward',
+                        count: 6,
+                        label: '6m'
+                    }, {
+                        step: 'year',
+                        stepmode: 'todate',
+                        count: 1,
+                        label: 'YTD'
+                    }, {
+                        step: 'year',
+                        stepmode: 'backward',
+                        count: 1,
+                        label: '1y'
+                    }, {
+                        step: 'all',
+                    }],
+                };
+
+            
+                
+                var layout={
+                    xaxis: {
+                        range: [2000, 2019],
+                            rangeselector: selectorOptions,
+                            rangeslider: { range: [2000, 2019] },
+                            title:"Años"
+                        },
+                    yaxis: {
+                            fixedrange: true,
+                            title: "Cantidad de Usuarios/"
+                        }
+
+                    }
+    
+
+            var data1 = [trace1, trace2, trace3, trace4, trace5,trace6,trace7,trace8,trace9,trace10,trace11,trace12];
+        
+            Plotly.newPlot('graph1', data1, layout,selectorOptions);
+        </script>      
         <footer>
             <div id="footer3">
                 <button class="boton5"> </button>
