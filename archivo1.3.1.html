@@ -2,7 +2,7 @@
 <!-- Data set (gráfico 1)-->
 <html>
     <head>
-        <meta charset="utf-8" />
+        <meta charset="utf-8" />						
         <title>Pagina web grupo 4 sección 1</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script src="https://d3js.org/d3.v7.min.js"></script>
@@ -39,10 +39,7 @@
         </div>
         <section id="graficos">
             <div class="subtitulos"> 
-                Cantidad de usuarios de las redes sociales en el mundo </div>
-        <div id="popup" class="popup">
-            <span class="popup-content">This is a pop-up message!</span>
-        </div>
+                Cantidad de usuarios de las redes sociales en el mundo </div>                 
         <div id='graph1'><!-- Grafico de lineas 1--></div>
         <script>
             var trace1 = {
@@ -185,6 +182,16 @@
         
             Plotly.newPlot('graph1', data1, layout,selectorOptions);
         </script>
+        <div id="popup" class="popup">
+            <span class="popup-content">This is a pop-up message!</span>
+        </div>        
+        <script>
+            var popup = document.getElementById('popup');
+
+            popup.addEventListener('mouseenter', function() {
+                popup.classList.add('hidden');
+            });
+        </script>   
     </section>
         <footer>
             <div id="footer3">
