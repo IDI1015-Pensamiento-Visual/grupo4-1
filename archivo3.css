@@ -1,3 +1,114 @@
+/*archivo1.0*/
+#Qinicial{
+    background-color: rgba(0,0,0,0.9); 
+}
+#preguntainicial {
+    font-family: fuente2;
+    src:url(Lato-Regular.ttf);
+    text-align: center;
+    position: relative;
+    bottom: -80px;
+    font-size: 40px;
+    color:white;
+}
+#output {
+    font-family: fuente2;
+    src:url(Lato-Regular.ttf);
+    font-weight: bold;
+    font-size: 100px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: white;
+    position: relative;
+    bottom: -120px;
+}
+.slider {
+    width: 50%;
+    margin: 30px;
+}
+.centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: -130px;
+}
+.boton4{
+    background: transparent url('confirmar.svg') no-repeat top left;
+    background-size: contain;
+    width:  150px;
+    height: 74px;
+    border: 1px solid transparent;
+}
+
+/*archivo1.1.1 y archivo1.1.2*/
+
+.respuestainicial{
+    color:white;
+    font-size: 30px;
+    font-family: fuente2;
+    src:url(Lato-Regular.ttf);
+    text-align: center;
+    position: relative;
+    bottom: -20px;
+}
+.personas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: -50px;
+}
+#output2 {
+    font-family: fuente2;
+    src:url(Lato-Regular.ttf);
+    font-weight: bold;
+    font-size: 90px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color:#F5A7E4;
+    position: relative;
+    bottom: -50px;
+}
+#texto {
+    font-size: 30px;
+    font-family: fuente2;
+    src:url(Lato-Regular.ttf);
+    text-align: center;
+    color:#F5A7E4;
+    font-weight: bold;
+    position: relative;
+    bottom: -20px;
+}
+#promedioredes {
+    position: relative;
+    left: 130px;
+    bottom: -10px;
+    width: 540px;
+    height: 90px;
+}
+#reloj{
+    position: relative;
+    left: 60px;
+    bottom: -10px;
+    width: 490px;
+    height: 90px;
+}
+.boton9{
+    background: transparent url('siguiente.svg') no-repeat top left;
+    width:  140px;
+    height: 43px;
+    background-size: contain;
+    border: 1px solid transparent;
+    position: relative;
+    bottom: -70px;
+    left: 40px;
+}
+/*archivo1.2*/
+
+
 .titulos{
     font-family: fuente1;
     src:url(AndorRegular.otf);
@@ -45,13 +156,7 @@
     background-size: contain;
     border: 1px solid transparent;
 }
-.boton4{
-    background: transparent url('confirmar.svg') no-repeat top left;
-    background-size: contain;
-    width:  150px;
-    height: 74px;
-    border: 1px solid transparent;
-}
+
 
 .boton5{
     background: transparent url('inicio.svg') no-repeat top left;
@@ -60,96 +165,25 @@
     height: 36px;
     border: 1px solid transparent;
 }
-#imagengrafico{
-    position: relative;
-    left: 100px;
-}
+
 
 .historias {
     padding: 10px;
     border: 1.5px solid;
 }
 
-#preguntainicial {
-    font-family: fuente2;
-    src:url(Lato-Black.ttf);
-    text-align: center;
-    position: relative;
-    bottom: -100px;
-    font-size: 45px;
-    font-weight: bold;
-    color:#F59EE2;
-}
-
-#sliderentero{
-    position: relative;
-    bottom: -120px;
-}
-#Qinicial{
-    background-color: rgba(0,0,0,0.9); 
-}
-#output {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 70px;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    color: white;
-}
 
 
-#output2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 70px;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    color:#FB5CC2;
-    position: relative;
-    bottom: -70px;
-}
-
-.slider {
-    width: 50%;
-    margin: 30px;
-  }
 
 
-.centrar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    bottom: -70px;
-}
 
 #subtitulo1{
     font-family: fuente1;
     font-size: 60px;
 }
 
-#texto {
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    color:#FB5CC2;
-    font-weight: bold;
-    position: relative;
-    bottom: -70px;
-}
-#promedioredes {
-    position: relative;
-    bottom: -100px;
-    left: 200px;
-}
 
-#reloj{
-    position: relative;
-    bottom: -100px;
-    left: 50px;
-}
+
 
 #inicio {
     background: transparent url('backgroundpaginaprincipal.svg') no-repeat top;
@@ -206,59 +240,18 @@
     border-radius: 15px;
     background: #F59EE2;
     cursor: pointer;
-  }
-
-#year1{
-   position: relative;
-   left: 255px;
-   bottom: 40px;
-   height: 5vh ;
-   width: 15vh;
 }
-#year2{
-    position: relative;
-    left: 270px;
-    bottom: 40px;
-    height: 5vh ;
-    width: 15vh;
- }
- #year3{
-    position: relative;
-    left: 330px;
-    bottom: 40px;
-    height: 5vh ;
-    width: 15vh;
- }
- #year4{
-    position: relative;
-    left: 300px;
-    bottom: 40px;
-    height: 5vh ;
-    width: 15vh;
- }
- #year5{
-    position: relative;
-    left: 270px;
-    bottom: 40px;
-    height: 5vh ;
-    width: 15vh;
- }
- #year6{
-    position: relative;
-    left: 560px;
-    bottom: 40px;
-    height: 5vh ;
-    width: 15vh;
- }
- .mensajes{
+
+.mensajes{
     display: none;
     position: relative;
     left: 900px;
     height: 10vh;
     width: 60vh;
     bottom: 450px;
-  }
-  #hazclick{
+}
+
+#hazclick{
     display: none;
     height: 12vh;
     width: 60vh;
@@ -266,8 +259,27 @@
     left: 750px;
     bottom: -300px;
 
-  }
-.respuestainicial{
-    color:#FB5CC2;
-    font-size: 30px;
+}
+
+/*popup son de los 1.3*/
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+  
+.popup:hover {
+    opacity: 0.5;
+    transition: opacity 4s ease;
+}
+  
+.popup-content {
+    display: inline-block;
 }

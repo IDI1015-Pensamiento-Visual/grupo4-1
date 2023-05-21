@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $(".boton1").click(function(){
-        window.location.href = "archivo1.1.html";
+        window.location.href = "archivo1.2.html";
     });
     $(".boton2").click(function(){
         window.location.href = "archivo1.4.html";
