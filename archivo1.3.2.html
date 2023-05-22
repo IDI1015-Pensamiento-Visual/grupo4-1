@@ -24,7 +24,8 @@
             }
         </style>
     </head>
-    <header class="titulos2">Impacto negativo de las redes sociales
+    <header class="backgroundtitulos">
+        <div class=titulos>Impacto negativo de las redes sociales</div>
     </header>
     <body>
         <section class="headerinicio">
@@ -34,10 +35,11 @@
             <button  class="boton2" title="¿Por qué las redes sociales afectan la salud mental?"></button>
         </div>
         </section>
-        <div>
-            <button class="boton6" title="Cantidad de usuarios de las redes sociales en el mundo"></button>
-            <button class="boton7" title="Cantidad de personas en el mundo con problemas de salud mental"></button>
-            <button class="boton8" title="Cantidad de usuarios de las redes sociales y personas con problemas de salud mental en el mundo"></button>
+        <div class="botonesgraf">
+            <button id="boton6" class="boton6" title="Cantidad de usuarios de las redes sociales en el mundo"></button>
+            <button id="boton71" class="boton7" title="Cantidad de personas en el mundo con problemas de salud mental"></button>
+            <button id="boton8" class="boton8" title="Cantidad de usuarios de las redes sociales y personas con problemas de salud mental en el mundo"></button>
+            <button id="boton10" class="boton10" title="Análisis de datos"></button>
         </div>
         <section id="graficos">
         <div class="subtitulos" >Cantidad de personas en el mundo con problemas de salud mental
@@ -50,7 +52,7 @@
             type: 'scatter',
             name: "Ansiedad",
             line: {
-                color: "#4862C9" }
+                color: "#6BB8FF" }
             };
         
             var trace2 = {
@@ -59,7 +61,7 @@
             type: 'scatter',
             name: "Desordenes Alimenticios",
             line:{
-                color: "#7B67F8"
+                color: "#5676F1"
             }
             };
 
@@ -69,7 +71,7 @@
             type: 'scatter',
             name: "Depresión",
             line:{
-                color: "#988FFF"
+                color: "#9C8CFF"
             }
             };
         
@@ -79,7 +81,7 @@
             type: 'scatter',
             name: "Suicidios",
             line:{
-                color:"#B784F6"
+                color:"#AC6BFF"
             }
             };
 
@@ -87,9 +89,9 @@
             x: [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
             y: [255, 258, 261, 263, 262, 262, 263, 270, 276, 280, 287, 290, 293, 293, 299, 302, 306, 309, 313, 318],
             type: 'scatter',
-            name: "Muertes Desordenes Alimenticios",
+            name: "Muertes TCA",
             line:{
-                color: "#D37FF0"
+                color: "DEB4FF"
             }
             };
 
@@ -139,9 +141,4 @@
             Plotly.newPlot('graph2', data2, layout, selectorOptions);
         </script>
     </section>
-        <footer>
-            <div id="footer3">
-                <button class="boton5"> </button>
-            </div>
-        </footer>
     </body>

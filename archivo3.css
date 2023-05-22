@@ -7,9 +7,10 @@
     src:url(Lato-Regular.ttf);
     text-align: center;
     position: relative;
-    bottom: -80px;
+    bottom: -60px;
     font-size: 40px;
     color:white;
+    line-height: 1.5;
 }
 #output {
     font-family: fuente2;
@@ -21,7 +22,7 @@
     padding-bottom: 10px;
     color: white;
     position: relative;
-    bottom: -120px;
+    bottom: -80px;
 }
 .slider {
     width: 50%;
@@ -32,7 +33,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    bottom: -130px;
+    bottom: -80px;
 }
 .boton4{
     background: transparent url('confirmar.svg') no-repeat top left;
@@ -51,98 +52,146 @@
 
 /*archivo1.1.1 y archivo1.1.2*/
 
+#respuesta{
+    background-color: rgba(0,0,0,0.9);
+}
 .respuestainicial{
     color:white;
-    font-size: 30px;
+    font-size: 25px;
     font-family: fuente2;
     src:url(Lato-Regular.ttf);
     text-align: center;
     position: relative;
-    bottom: -20px;
+    bottom: -30px;
 }
 .personas{
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    bottom: -50px;
+    bottom: -80px;
 }
 #output2 {
     font-family: fuente2;
     src:url(Lato-Regular.ttf);
     font-weight: bold;
-    font-size: 90px;
+    font-size: 80px;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 10px;
     color:#F5A7E4;
     position: relative;
-    bottom: -50px;
+    bottom: -85px;
 }
 #texto {
-    font-size: 30px;
+    font-size: 25px;
     font-family: fuente2;
     src:url(Lato-Regular.ttf);
     text-align: center;
     color:#F5A7E4;
     font-weight: bold;
     position: relative;
-    bottom: -20px;
+    bottom: -70px;
+    line-height: 1.25;
 }
 #promedioredes {
     position: relative;
     left: 130px;
-    bottom: -10px;
-    width: 540px;
-    height: 90px;
+    bottom: -90px;
+    width: 520px;
+    height: 70px;
 }
 #reloj{
     position: relative;
     left: 60px;
-    bottom: -10px;
-    width: 490px;
-    height: 90px;
+    bottom: -90px;
+    width: 470px;
+    height: 70px;
 }
 .boton9{
     background: transparent url('siguiente.svg') no-repeat top left;
-    width:  140px;
-    height: 43px;
+    width:  130px;
+    height: 33px;
     background-size: contain;
     border: 1px solid transparent;
     position: relative;
-    bottom: -70px;
-    left: 40px;
+    bottom: -105px;
+    left: 140px;
 }
+
+/*archivo1.1.3*/
+#t1peligro{
+    font-family: fuente2;
+    src:url(Lato-Regular.ttf);
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+#t2peligro{
+    font-family: fuente2;
+    src:url(Lato-Regular.ttf);
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 10px;
+    bottom: 30px;
+    line-height: 1.25;
+}
+#peligro1{
+    position: relative;
+    left: 380px;
+    bottom: -75px;
+}
+#peligro2{
+    position: relative;
+    left: 830px;
+    bottom: 70px;
+}
+.boton11{
+    background: transparent url('siguiente2.svg') no-repeat top left;
+    width:  130px;
+    height: 33px;
+    background-size: contain;
+    border: 1px solid transparent;
+    position: relative;
+    bottom: 0px;
+    left: 550px;
+}
+
 /*archivo1.2*/
 .headerinicio{
-    background-color: rgba(0,0,0,0.9);
-    height: 110px;
+    background-color: #F473D8;
+    height: 80px;
 }
 .boton1{
     background: transparent url('aplicacion1.svg') no-repeat top left;
-    width:  80px;
-    height: 80px;
+    width:  60px;
+    height: 60px;
     background-size: contain;
     border: 1px solid transparent;
 }
 .boton2{
     background: transparent url('aplicacion2.svg') no-repeat top left;
-    width:  80px;
-    height: 80px;
+    width:  60px;
+    height: 60px;
     background-size: contain;
     border: 1px solid transparent;
 }
 .boton3{
     background: transparent url('aplicacion3.svg') no-repeat top left;
-    width:  80px;
-    height: 80px;
+    width:  60px;
+    height: 60px;
     background-size: contain;
     border: 1px solid transparent;
 
 }
 .aplicaciones{
     position: relative;
-    bottom: -15px;
+    bottom: -10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,7 +202,7 @@
     /*background-image: url("backgroundpaginaprincipal.svg");
     background-size: cover;
     background-position: center;*/
-    height: 240vh;
+    height: 210vh;
     opacity: 0.9;
     position: relative;
     bottom: 90px;
@@ -172,32 +221,47 @@
 #T1{
     font-family: fuente2;
     src:url(Lato-Regular.ttf);
-    font-size: 35px;
+    font-size: 25px;
 }
 #T2{
     font-family: fuente1;
     src:url(AndorRegular.ttf);
-    font-size: 60px;
+    font-size: 50px;
+    position: relative;
+    bottom: 15px;
 }
 #T3{
     font-family: fuente2;
     src:url(Lato-Regular.ttf);
-    font-size: 35px;
+    font-size: 25px;
+    position: relative;
+    bottom: 35px;
 }
 #T4{
     font-family: fuente2;
     src:url(Lato-Regular.ttf);
-    font-size: 35px;
+    font-size: 25px;
+    position: relative;
+    bottom: 35px;
 }
 #textoinicial{
     position: relative;
-    left: 400px;
-    bottom: -140px;
+    left: 340px;
+    bottom: -80px;
 }
-.titulos2{
+
+
+/*archivo1.3*/
+.titulos{
     font-family: fuente1;
     src:url(AndorRegular.otf);
     font-size: 50px;
+    color: white;
+    position: relative;
+    left: 20px;
+}
+.backgroundtitulos{
+    background-color: #F5A7E4;
 }
 .subtitulos{
     font-family: fuente3;
@@ -206,31 +270,71 @@
     font-weight: bold;
     text-align: center;
 }
-.boton6{
+#boton6{
     background: transparent url('boton6.svg') no-repeat top left;
     background-size: contain;
-    width:  150px;
-    height: 74px;
+    width:  130px;
+    height: 54px;
     border: 1px solid transparent;
 }
-.boton7{
+#boton61{
+    background: transparent url('boton61.svg') no-repeat top left;
+    background-size: contain;
+    width:  130px;
+    height: 54px;
+    border: 1px solid transparent;
+}
+#boton7{
         background: transparent url('boton7.svg') no-repeat top left;
         background-size: contain;
-        width:  150px;
-        height: 74px;
+        width:  130px;
+        height: 54px;
         border: 1px solid transparent;
 }
-.boton8{
+#boton71{
+    background: transparent url('boton71.svg') no-repeat top left;
+    background-size: contain;
+    width:  130px;
+    height: 54px;
+    border: 1px solid transparent;
+}
+#boton8{
     background: transparent url('boton8.svg') no-repeat top left;
     background-size: contain;
-    width:  150px;
-    height: 74px;
+    width:  130px;
+    height: 54px;
     border: 1px solid transparent;
+}
+#boton81{
+    background: transparent url('boton81.svg') no-repeat top left;
+    background-size: contain;
+    width:  130px;
+    height: 54px;
+    border: 1px solid transparent;
+}
+#boton10{
+    background: transparent url('boton10.svg') no-repeat top left;
+    background-size: contain;
+    width:  130px;
+    height: 54px;
+    border: 1px solid transparent;
+}
+#boton101{
+    background: transparent url('boton101.svg') no-repeat top left;
+    background-size: contain;
+    width:  130px;
+    height: 54px;
+    border: 1px solid transparent;
+}
+.botonesgraf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .popup1 {
     background: transparent url('Haz_doble_click.svg') no-repeat top left;
     position: relative;
-    top: -200px;
+    top: -240px;
     left: 0px;
     padding: 20px;
     width: 70px;
@@ -251,7 +355,7 @@
     background: transparent url('Desliza.svg') no-repeat top left;
     position: relative;
     top: -70px;
-    left: 0px;
+    left: -15px;
     padding: 20px;
     width: 70px;
     float: right;
@@ -290,8 +394,8 @@
 .popup4 {
     background: transparent url('mira.svg') no-repeat top left;
     position: relative;
-    top: -600px;
-    left: 0px;
+    top: -535px;
+    left: 240px;
     padding: 20px;
     width: 70px;
     float: left;
@@ -308,28 +412,146 @@
     display: inline-block;
 }
 
+/*archivo1.3.4*/
+#f1{
+    background: transparent url('f2.svg') no-repeat top left;
+    background-size: contain;
+    width:  130px;
+    height: 54px;
+    border: 1px solid transparent;
+    position: relative;
+    top: 20px;
+    left:100px;
+}
+#w1{
+    background: transparent url('w2.svg') no-repeat top left;
+    background-size: contain;
+    width:  130px;
+    height: 54px;
+    border: 1px solid transparent;
+    position: relative;
+    top: 20px;
+    left:200px;
+}
+#i1{
+    background: transparent url('i2.svg') no-repeat top left;
+    background-size: contain;
+    width:  130px;
+    height: 54px;
+    border: 1px solid transparent;
+    position: relative;
+    top: 20px;
+    left:300px;
+}
+#s1{
+    background: transparent url('s2.svg') no-repeat top left;
+    background-size: contain;
+    width:  130px;
+    height: 54px;
+    border: 1px solid transparent;
+    position: relative;
+    top: 20px;
+    left:400px;
+}
+#t1{
+    background: transparent url('t2.svg') no-repeat top left;
+    background-size: contain;
+    width:  130px;
+    height: 54px;
+    border: 1px solid transparent;
+    position: relative;
+    top: 20px;
+    left:500px;
+}
+.analisis{
+    display: none;
+    width:1200px;
+    height:1600px;
+    position: relative;
+    left: 20px;
+}
 
+/*archivo1.4*/
+#texto4{
+    font-family: fuente2;
+    src:url(Lato-Regular.ttf);
+    font-size: 25px;
+    position: relative;
+    left: 10px;
+    line-height: 1.25;
+}
+#addiccion1{
+    position: relative;
+    left: 100px;
+    width: 500px;
+    height: 500px;
+}
+#soledad1{
+    position: relative;
+    left: 150px;
+    width: 500px;
+    height: 500px;
+}
+#exp1{
+    position: relative;
+    left: 100px;
+    bottom: -50px;
+    width: 500px;
+    height: 500px;
+}
+#cyber1{
+    position: relative;
+    left: 150px;
+    bottom: -50px;
+    width: 500px;
+    height: 500px;
+}
+#addiccion2{
+    display: none;
+    position: absolute;
+    left: 108px;
+    bottom: -232px;
+    width: 500px;
+    height: 500px;
+}
+#soledad2{
+    display: none;
+    position: absolute;
+    left: 662px;
+    bottom: -232px;
+    width: 500px;
+    height: 500px;
+}
+#exp2{
+    display: none;
+    position: absolute;
+    left: 108px;
+    bottom: -785px;
+    width: 500px;
+    height: 500px;
+}
+#cyber2{
+    display: none;
+    position: absolute;
+    left: 662px;
+    bottom: -785px;
+    width: 500px;
+    height: 500px;
+}
+#mensajeayuda{
+    position: fixed;
+    bottom: 10px;
+}
 
-
-.titulos{
+#textoayuda{
     font-family: fuente1;
     src:url(AndorRegular.otf);
-    font-size: 80px;
+    font-size: 60px;
+    text-align: center;
 }
-
-#titulo2{
-    color:#7048C5;
-    padding-top: 0px;
-    background: rgba(255,218,118,0.8)
-}
-
-
-
-/*archivo1.3*/
-
-
-
-
+.hidden {
+    display: none;
+  }
 
 
 .boton5{
@@ -338,72 +560,4 @@
     width:  70px;
     height: 36px;
     border: 1px solid transparent;
-}
-
-
-
-
-
-
-
-
-#subtitulo1{
-    font-family: fuente1;
-    font-size: 60px;
-}
-
-
-
-
-.slider-ms-thumb {
-    margin-top: 1px;
-    box-shadow: 1px 1px 1px #000031;
-    border: 1px solid #131E1C;
-    height: 26px;
-    width: 26px;
-    border-radius: 15px;
-    background: #F59EE2;
-    cursor: pointer;
-}
-
-.mensajes{
-    display: none;
-    position: relative;
-    left: 900px;
-    height: 10vh;
-    width: 60vh;
-    bottom: 450px;
-}
-
-#hazclick{
-    display: none;
-    height: 12vh;
-    width: 60vh;
-    position: relative;
-    left: 750px;
-    bottom: -300px;
-
-}
-
-/*popup son de los 1.3*/
-.popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    background-color: #f1f1f1;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    opacity: 1;
-    transition: opacity 1s ease;
-}
-  
-.popup:hover {
-    opacity: 0.5;
-    transition: opacity 4s ease;
-}
-  
-.popup-content {
-    display: inline-block;
 }
