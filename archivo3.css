@@ -134,6 +134,19 @@
     bottom: 30px;
     line-height: 1.25;
 }
+#t3peligro{
+    font-family: fuente2;
+    src:url(Lato-Regular.ttf);
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 10px;
+    bottom: 50px;
+    line-height: 1.25
+}
 #peligro1{
     position: relative;
     left: 380px;
@@ -152,13 +165,13 @@
     border: 1px solid transparent;
     position: relative;
     bottom: 0px;
-    left: 550px;
+    left: 580px;
 }
 
 /*archivo1.2*/
 .headerinicio{
     background-color: #F473D8;
-    height: 80px;
+    height:80px;
 }
 .boton1{
     background: transparent url('aplicacion1.svg') no-repeat top left;
@@ -192,7 +205,7 @@
 }
 #inicio {
     background: transparent url('backgroundpaginaprincipal.svg') no-repeat top;
-    height: 210vh;
+    height: 199vh;
     opacity: 0.9;
     position: relative;
     bottom: 90px;
