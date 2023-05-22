@@ -42,13 +42,6 @@
     height: 74px;
     border: 1px solid transparent;
 }
-#respuesta{
-    background: transparent url('Narrativa.png') no-repeat top;
-    /*background-image: url("backgroundpaginaprincipal.svg");
-    background-size: cover;
-    background-position: center;*/
-    height: 100vh;
-}
 
 /*archivo1.1.1 y archivo1.1.2*/
 
@@ -199,9 +192,6 @@
 }
 #inicio {
     background: transparent url('backgroundpaginaprincipal.svg') no-repeat top;
-    /*background-image: url("backgroundpaginaprincipal.svg");
-    background-size: cover;
-    background-position: center;*/
     height: 210vh;
     opacity: 0.9;
     position: relative;
@@ -422,6 +412,7 @@
     position: relative;
     top: 20px;
     left:100px;
+    
 }
 #w1{
     background: transparent url('w2.svg') no-repeat top left;
@@ -465,10 +456,11 @@
 }
 .analisis{
     display: none;
-    width:1200px;
-    height:1600px;
+}
+#f3{
     position: relative;
-    left: 20px;
+    top: -30px;
+    left: 50px;
 }
 
 /*archivo1.4*/
@@ -548,10 +540,20 @@
     src:url(AndorRegular.otf);
     font-size: 60px;
     text-align: center;
+    position: relative;
+    top: 20px;
 }
 .hidden {
     display: none;
   }
+.ayudas{
+    width: 1000px;
+    height: 100px;
+    position: relative;
+    left: 150px;
+}
+
+
 
 
 .boton5{

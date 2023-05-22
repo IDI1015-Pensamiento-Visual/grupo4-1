@@ -55,17 +55,6 @@ $(document).ready(function(){
         $("#t3").toggle();
     });
         
-    var mensaje = $('#mensajeayuda');
-    var content = $('#textoayuda').offset().top;
-      
-    $(window).scroll(function() {
-          if ($(window).scrollTop() > content) {
-            mensaje.addClass('hidden'); 
-          } else {
-            mensaje.removeClass('hidden'); 
-          }
-        });
-      
 
 /*hovers de archivo1.4*/
     $("#addiccion1").hover(function() {
@@ -152,5 +141,15 @@ $(document).ready(function(){
                     $("#exp2").hide();
                     },
                 );  
+    var mensaje = $('#mensajeayuda');
+    var content = $('#textoayuda').offset().top;
+      
+    $(window).scroll(function() {
+          if ($(window).scrollTop() > content) {
+            mensaje.addClass('hidden'); 
+          } else {
+            mensaje.removeClass('hidden'); 
+          }
+        });  
 
 });
