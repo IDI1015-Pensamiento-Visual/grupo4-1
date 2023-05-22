@@ -29,13 +29,13 @@
     </header>
     <body>
         <section class="headerinicio">
-        <div class="aplicaciones">
+        <div class="aplicaciones"><!--hub de las secciones de la pagina-->
             <button class="boton1" title="Inicio" ></button>
             <button  class="boton3" title="Impacto negativo de las redes sociales" ></button>
             <button  class="boton2" title="¿Por qué las redes sociales afectan la salud mental?"></button>
         </div>
         </section>
-        <div class="botonesgraf">
+        <div class="botonesgraf"><!--hub de las secciones del impacto negativo-->
             <button id="boton61" class="boton6" title="Cantidad de usuarios de las redes sociales en el mundo"></button>
             <button id="boton7" class="boton7" title="Cantidad de personas en el mundo con problemas de salud mental"></button>
             <button id="boton8" class="boton8" title="Cantidad de usuarios de las redes sociales y personas con problemas de salud mental en el mundo"></button>
@@ -44,22 +44,23 @@
         <section id="graficos">
             <div class="subtitulos"> 
                 Cantidad de usuarios de las redes sociales en el mundo </div>
-        <div id='graph1'><!-- Grafico de lineas 1--></div>
-        <script>
-            var trace1 = {
+        <div id='graph1'><!-- Grafico de lineas 1--></div><!--abajo esta el codigo del grafico, este lo obtuvimos de la pagina plotly, luego cambiamos lo que necesitabamos para nuestra pagina
+        arriba se referencio Plotly para poder usarse y se supone que la parte de abajo se hacia en un archivo aparte javascript pero por alguna razon solo nos funcionaba al hacerlo script-->
+        <script> //https://plotly.com/javascript/range-slider/
+            var trace1 = { //en el x e y insertamos nuestros datos
             x: [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
             y: [0, 15000000,50000000, 110000000, 200000000, 370000000, 500000000, 700000000,1000000000,1210000000],
-            mode: 'lines',
-            name: "Instagram",
+            mode: 'lines', //aqui ponemos el tipo de grafico que queremos
+            name: "Instagram", //aqui va el nombre de la leyenda
             line:{
-                color: "#F8567C",
+                color: "#F8567C", //aqui mas o menos se puede entender por el codigo el color y tipo de linea 
                 dash: 'dot',
                 width: 3
             },
-            hovertemplate: '<b>Instagram</b><br>Users: %{y}<extra>Se fundó el 2010</extra>'
+            hovertemplate: '<b>Instagram</b><br>Users: %{y}<extra>Se fundó el 2010</extra>' //esto es lo q se muestra al poner el mouse encima
             };
 
-            var trace2 = {
+            var trace2 = { //luego se repite para los siguientes
                 x: [2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
                 y: [0,6000000,12000000,58000000,100000000,242000000,482000000,739000000,955000000,1155000000,1310000000,1490000000,1710000000,2000000000,2230000000,2410000000],
                 mode: 'lines',
@@ -142,7 +143,7 @@
 
             
                 
-                var layout={
+                var layout={ //esta parte se encarga de hacer la linea de tiempo, donde le fijamos el rango de años
                     xaxis: {
                         range: [2000, 2019],
                             rangeselector: selectorOptions,
@@ -157,11 +158,11 @@
                     }
     
 
-            var data1 = [trace1, trace2, trace3, trace4, trace5];
+            var data1 = [trace1, trace2, trace3, trace4, trace5]; //aqui se incluyen todos los graficos
         
             Plotly.newPlot('graph1', data1, layout,selectorOptions);
         </script>
-        <div id="popup1" class="popup1">
+        <div id="popup1" class="popup1"> <!--Aqui los popups les pedimos a ChatGPT uno y los otros los replicamos a partir del primero modificando tambien el formato (cambiandolo a svg)-->
             <span class="popup-content1"></span>
         </div>        
         <script>
