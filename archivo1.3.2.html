@@ -24,21 +24,24 @@
             }
         </style>
     </head>
-    <header class="titulos2" id="titulo3">Impacto negativo de las redes sociales
-        <nav class="historias">
-            <button class="boton1" title="inicio" ></button>
-            <button class="boton3" ></button>
-            <button class="boton2" ></button>
-        </nav>
+    <header class="backgroundtitulos">
+        <div class=titulos>Impacto negativo de las redes sociales</div>
     </header>
     <body>
-        <div>
-            <button class="boton6">Usuarios de redes sociales vs tiempo</button>
-            <button class="boton7">Personas con problemas de salud mental vs tiempo</button>
-            <button class="boton8">Usuarios de redes sociales vs tiempo y personas con problemas de salud mental vs tiempo</button>
+        <section class="headerinicio">
+        <div class="aplicaciones">
+            <button class="boton1" title="Inicio" ></button>
+            <button  class="boton3" title="Impacto negativo de las redes sociales" ></button>
+            <button  class="boton2" title="¿Por qué las redes sociales afectan la salud mental?"></button>
+        </div>
+        </section>
+        <div class="botonesgraf">
+            <button id="boton6" class="boton6" title="Cantidad de usuarios de las redes sociales en el mundo"></button>
+            <button id="boton71" class="boton7" title="Cantidad de personas en el mundo con problemas de salud mental"></button>
+            <button id="boton8" class="boton8" title="Cantidad de usuarios de las redes sociales y personas con problemas de salud mental en el mundo"></button>
+            <button id="boton10" class="boton10" title="Análisis de datos"></button>
         </div>
         <section id="graficos">
-
         <div class="subtitulos" >Cantidad de personas en el mundo con problemas de salud mental
     </div>
         <div id='graph2'><!-- Grafico de lineas 2--></div>
@@ -49,16 +52,16 @@
             type: 'scatter',
             name: "Ansiedad",
             line: {
-                color: "#FB5CC2" }
+                color: "#6BB8FF" }
             };
         
             var trace2 = {
             x: [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
             y: [9840000, 9968000, 10096000, 10224000, 10368000, 10496000, 10624000, 10768000, 11577000, 11730000, 11883000, 12019000, 12172000, 12325000, 12478000, 13374000, 13518000, 13680000, 13824000, 13968000],
             type: 'scatter',
-            name: "D.Alimenticios",
+            name: "Desordenes Alimenticios",
             line:{
-                color: "#FF8847"
+                color: "#5676F1"
             }
             };
 
@@ -68,7 +71,7 @@
             type: 'scatter',
             name: "Depresión",
             line:{
-                color: "#4862C9"
+                color: "#9C8CFF"
             }
             };
         
@@ -78,7 +81,7 @@
             type: 'scatter',
             name: "Suicidios",
             line:{
-                color:"#C837AB"
+                color:"#AC6BFF"
             }
             };
 
@@ -86,9 +89,9 @@
             x: [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
             y: [255, 258, 261, 263, 262, 262, 263, 270, 276, 280, 287, 290, 293, 293, 299, 302, 306, 309, 313, 318],
             type: 'scatter',
-            name: "Muertes D.A.",
+            name: "Muertes TCA",
             line:{
-                color: "#7048C5"
+                color: "DEB4FF"
             }
             };
 
@@ -138,9 +141,4 @@
             Plotly.newPlot('graph2', data2, layout, selectorOptions);
         </script>
     </section>
-        <footer>
-            <div id="footer3">
-                <button class="boton5"> </button>
-            </div>
-        </footer>
     </body>
