@@ -45,7 +45,7 @@
             <div class="subtitulos"> 
                 Cantidad de usuarios de las redes sociales en el mundo </div>
         <div id='graph1'><!-- Grafico de lineas 1--></div><!--abajo esta el codigo del grafico, este lo obtuvimos de la pagina plotly, luego cambiamos lo que necesitabamos para nuestra pagina
-        arriba se referencio Plotly para poder usarse y se supone que la parte de abajo se hacia en un archivo aparte javascript pero por alguna razon solo nos funcionaba al hacerlo script-->
+        arriba se referencio Plotly para poder usarse-->
         <script> //https://plotly.com/javascript/range-slider/
             var trace1 = { //en el x e y insertamos nuestros datos
             x: [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
@@ -114,7 +114,7 @@
                 hovertemplate: '<b>TikTok</b><br>Users: %{y}<extra>Se fundó el 2016</extra>'
                 };
 
-                var selectorOptions = {
+                var selectorOptions = { //Esta parte del código genera el slider que acota el eje x, que te deja acotar en meses y años//
                     buttons: [{
 
                         step: 'month',
@@ -143,7 +143,7 @@
 
             
                 
-                var layout={ //esta parte se encarga de hacer la linea de tiempo, donde le fijamos el rango de años
+                var layout={ // En esta parte fijamos los ejes, y ponemos el slider que ya definimos en el eje x
                     xaxis: {
                         range: [2000, 2019],
                             rangeselector: selectorOptions,
@@ -162,7 +162,8 @@
         
             Plotly.newPlot('graph1', data1, layout,selectorOptions);
         </script>
-        <div id="popup1" class="popup1"> <!--Aqui los popups les pedimos a ChatGPT uno y los otros los replicamos a partir del primero modificando tambien el formato (cambiandolo a svg)-->
+        <div id="popup1" class="popup1"> <!--Aqui los popups les pedimos el comando a ChatGPT uno y los otros los replicamos a partir del primero modificando tambien el formato (cambiandolo a svg).
+        Los popups van a desaperecer cuando el mouse pasa por encima de este-->
             <span class="popup-content1"></span>
         </div>        
         <script>
@@ -203,4 +204,11 @@
             });
         </script>
     </section>
+    <footer class="foot">
+        Business of Apps. (2023, 2 mayo). WhatsApp Revenue and Usage Statistics (2023). https://www.businessofapps.com/data/whatsapp-statistics/
+        Business of Apps. (2023, 3 mayo). TikTok Revenue and Usage Statistics (2023). https://www.businessofapps.com/data/tik-tok-statistics/
+        Business of Apps. (2023, 2 mayo). Snapchat Revenue and Usage Statistics (2023). https://www.businessofapps.com/data/snapchat-statistics/
+        Business of Apps. (2023, 2 mayo). Facebook Revenue and Usage Statistics (2023). https://www.businessofapps.com/data/facebook-statistics/
+        Business of Apps. (2023, 2 mayo). Instagram Revenue and Usage Statistics (2023). https://www.businessofapps.com/data/instagram-statistics/
+    </footer>
     </body>

@@ -22,7 +22,9 @@
             <h1 id="preguntainicial">¿Qué porcentaje de la población mundial <br> crees que usa redes sociales?</h1>
         </header>
         <article >
-            <div id="output">0%</div> <!--el slider se lo pedimos a ChatGPT-->
+            <!--el slider se lo preguntamos a ChatGPT, lo que hace es que el slider varía entre 
+            los valores de del 0% al 100%, y cuando alguien lo mueve se muestra el valor en el output-->
+            <div id="output">0%</div> 
             <div class="centrar">
             <input type="range" min="0" max="100" value="0" class="slider">
             </div>
@@ -32,6 +34,7 @@
                 $('#output').html(this.value + '%');
             });
             </script>
+            <!--Este botón te lleva al archivo1.1.1 o archivo1.1.2-->
             <div class="centrar">
                 <button class="boton4">
                 </button>
